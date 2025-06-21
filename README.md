@@ -1,12 +1,51 @@
-# React + Vite
+# 📝 ToDoReact
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and responsive To-Do List application built with **React** and **Vite**. This app helps you keep track of your tasks efficiently with an intuitive user interface.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## Expanding the ESLint configuration
+Check out the live version here: [https://todo-react.vercel.app](https://todo-react.vercel.app) 
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📦 Features
+
+- ✅ Add new tasks
+- 🗑️ Delete existing tasks
+- 📱 Fully responsive
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React, Vite
+- **Styling:** CSS 
+- **Deployment:** Vercel
+
+---
+
+## 🚧 Getting Started
+
+### Installation
+
+```bash
+git clone https://github.com/animesh33-ctrl/ToDoReact.git
+cd ToDoReact
+npm install  # or yarn
+npm run dev  # or yarn dev
+```
+### Folder Structure :-
+
+ToDoReact/
+│
+├── public/             # Static files
+├── src/                # Source code
+│   ├── components/     # Reusable components
+│   ├── App.jsx         # Main app component
+│   └── index.js        # Entry point
+├── .gitignore
+├── package.json
+├── vite.config.js
+└── README.md
+
