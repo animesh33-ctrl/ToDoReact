@@ -37,15 +37,5 @@ npm run dev  # or yarn dev
 ```
 ### Folder Structure :-
 
-ToDoReact/
-│
-├── public/             # Static files
-├── src/                # Source code
-│   ├── components/     # Reusable components
-│   ├── App.jsx         # Main app component
-│   └── index.js        # Entry point
-├── .gitignore
-├── package.json
-├── vite.config.js
-└── README.md
+<pre lang="markdown"> ```bash ToDoReact/ ├── public/ # Static files ├── src/ # Source code │ ├── components/ # Reusable components │ ├── App.jsx # Main app component │ └── index.js # Entry point ├── .gitignore ├── package.json ├── vite.config.js └── README.md ``` </pre>
 
