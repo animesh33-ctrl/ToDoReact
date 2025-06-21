@@ -1,47 +1,35 @@
-import { useState } from "react";
+import { useRef } from "react";
+import { IoBagAddSharp } from "react-icons/io5";
 
 function AddTodo({ onNewItem }) {
-  const [todoName, setTodoName] = useState();
-  const [dueDate, setDueDate] = useState();
+  const todoElement = new useRef();
+  const dueDateElement = new useRef();
+  
+  const handleAddButtonClicked = (event) => {
+    event.preventDefault();
+    const todoName = todoElement.current.value;
+    const dueDate = dueDateElement.current.value;
+    todoElement.current.value = "";
+    dueDateElement.current.value = "";
 
-  const handleNameChange = (event) => {
-    setTodoName(event.target.value);
-  };
-
-  const handleDateChange = (event) => {
-    setDueDate(event.target.value);
-  };
-
-  const handleAddButtonClicked = () => {
     onNewItem(todoName, dueDate);
-    setDueDate("");
-    setTodoName("");
   };
 
   return (
     <div className="container text-center">
-      <div className="row kg-row">
+      <form className="row kg-row" onSubmit={handleAddButtonClicked}>
         <div className="col-6">
-          <input
-            type="text"
-            placeholder="Enter Todo Here"
-            value={todoName}
-            onChange={handleNameChange}
-          />
+          <input type="text" placeholder="Enter Todo Here" ref={todoElement} />
         </div>
         <div className="col-4">
-          <input type="date" value={dueDate} onChange={handleDateChange} />
+          <input type="date" ref={dueDateElement} />
         </div>
         <div className="col-2">
-          <button
-            type="button"
-            className="btn btn-success kg-button"
-            onClick={handleAddButtonClicked}
-          >
-            Add
+          <button className="btn btn-success kg-button">
+            <IoBagAddSharp />
           </button>
         </div>
-      </div>
+      </form>
     </div>
   );
 }
