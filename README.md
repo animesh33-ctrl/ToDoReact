@@ -5,7 +5,7 @@ A simple and responsive To-Do List application built with **React** and **Vite**
 
 ## 🚀 Live Demo
 
-Check out the live version here: [https://todo-react.vercel.app](https://todo-react.vercel.app) 
+Check out the live version here: [https://todo-react.vercel.app](https://to-do-react-wheat.vercel.app/) 
 
 ---
 
